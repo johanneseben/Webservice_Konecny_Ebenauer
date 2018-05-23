@@ -15,3 +15,6 @@ D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste
 D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.Properties.Resources.resources
 D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.csproj.GenerateResource.cache
 D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.csproj.CoreCompileInputs.cache
+C:\Users\Julian\Documents\HAK\201718\swe\WEbservice projekt\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\bin\Debug\Schülerliste.exe.config
+C:\Users\Julian\Documents\HAK\201718\swe\WEbservice projekt\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.exe
+C:\Users\Julian\Documents\HAK\201718\swe\WEbservice projekt\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.pdb
