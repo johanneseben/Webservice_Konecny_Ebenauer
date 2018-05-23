@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-/*using RestSharp;
-using RestSharp.Authenticators;
-using RESTful_Secure_Auftrag_Test.Models;
-using RESTful_Secure_Auftrag_Test.Forms;*/
+using Schuelerliste_Service;
+using Schuelerliste_Service.Authenticators;
+using Schülerliste.Models;
+using Schülerliste.Forms;
 
 
 namespace Schülerliste
@@ -21,14 +21,14 @@ namespace Schülerliste
         public Form1()
         {
             InitializeComponent();
-           /* restClient = new RestClient("http://localhost:8888");
-            authenticator = new HttpBasicAuthenticator("demo", "demo");*/
+            restClient = new RestClient("http://localhost:8888");
+            authenticator = new HttpBasicAuthenticator("demo", "demo");
             f1 = this;
         }
-       /* RestClient restClient;
+        RestClient restClient;
         IAuthenticator authenticator;
         ListViewItem lvItem;
-        */
+        
 
 
         private void Form1_Load(object sender, EventArgs e)

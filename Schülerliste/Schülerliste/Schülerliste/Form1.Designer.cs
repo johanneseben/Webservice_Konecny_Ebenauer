@@ -94,27 +94,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(317, 22);
+            this.label2.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(409, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(252, 44);
+            this.label2.Size = new System.Drawing.Size(241, 48);
             this.label2.TabIndex = 0;
             this.label2.Text = "Schuelerliste";
             // 
             // btSchueler
             // 
-            this.btSchueler.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSchueler.Location = new System.Drawing.Point(12, 105);
+            this.btSchueler.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSchueler.Location = new System.Drawing.Point(43, 104);
             this.btSchueler.Name = "btSchueler";
             this.btSchueler.Size = new System.Drawing.Size(471, 174);
             this.btSchueler.TabIndex = 1;
-            this.btSchueler.Text = "Schüler";
+            this.btSchueler.Text = "Schueler";
             this.btSchueler.UseVisualStyleBackColor = true;
             // 
             // btProgrammSchließen
             // 
-            this.btProgrammSchließen.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btProgrammSchließen.Location = new System.Drawing.Point(521, 308);
+            this.btProgrammSchließen.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btProgrammSchließen.Location = new System.Drawing.Point(554, 307);
             this.btProgrammSchließen.Name = "btProgrammSchließen";
             this.btProgrammSchließen.Size = new System.Drawing.Size(471, 174);
             this.btProgrammSchließen.TabIndex = 2;
@@ -124,8 +124,8 @@
             // 
             // btKlasse
             // 
-            this.btKlasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btKlasse.Location = new System.Drawing.Point(12, 308);
+            this.btKlasse.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btKlasse.Location = new System.Drawing.Point(43, 307);
             this.btKlasse.Name = "btKlasse";
             this.btKlasse.Size = new System.Drawing.Size(471, 174);
             this.btKlasse.TabIndex = 3;
@@ -135,8 +135,8 @@
             // 
             // btFörderkurse
             // 
-            this.btFörderkurse.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFörderkurse.Location = new System.Drawing.Point(521, 105);
+            this.btFörderkurse.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFörderkurse.Location = new System.Drawing.Point(554, 104);
             this.btFörderkurse.Name = "btFörderkurse";
             this.btFörderkurse.Size = new System.Drawing.Size(471, 174);
             this.btFörderkurse.TabIndex = 4;
@@ -146,12 +146,14 @@
             // 
             // Form1
             // 
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1062, 524);
             this.Controls.Add(this.btFörderkurse);
             this.Controls.Add(this.btKlasse);
             this.Controls.Add(this.btProgrammSchließen);
             this.Controls.Add(this.btSchueler);
             this.Controls.Add(this.label2);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
