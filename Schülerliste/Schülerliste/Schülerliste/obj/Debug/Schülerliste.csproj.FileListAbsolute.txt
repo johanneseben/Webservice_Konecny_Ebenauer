@@ -7,3 +7,11 @@ C:\Users\Julian\Documents\HAK\201718\swe\WEbservice projekt\Schülerliste\Schül
 C:\Users\Julian\Documents\HAK\201718\swe\WEbservice projekt\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.csproj.GenerateResource.Cache
 C:\Users\Julian\Documents\HAK\201718\swe\WEbservice projekt\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.exe
 C:\Users\Julian\Documents\HAK\201718\swe\WEbservice projekt\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.pdb
+D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.csprojResolveAssemblyReference.cache
+D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.Form1.resources
+D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.FormSchuelerHinzufuegen.resources
+D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.frmFörderkurs.resources
+D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.frmSchueler.resources
+D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.Properties.Resources.resources
+D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.csproj.GenerateResource.cache
+D:\HAK 4CK\Webservice_Konecny_Ebenauer\Schülerliste\Schülerliste\Schülerliste\obj\Debug\Schülerliste.csproj.CoreCompileInputs.cache

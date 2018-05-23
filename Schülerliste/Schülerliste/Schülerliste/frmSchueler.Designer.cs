@@ -48,11 +48,10 @@
             this.columnHeader4,
             this.columnHeader5});
             this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(13, 13);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
+            this.listView1.Location = new System.Drawing.Point(10, 11);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(558, 337);
+            this.listView1.Size = new System.Drawing.Size(512, 275);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -88,9 +87,10 @@
             // btHinzufügen
             // 
             this.btHinzufügen.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHinzufügen.Location = new System.Drawing.Point(12, 373);
+            this.btHinzufügen.Location = new System.Drawing.Point(9, 303);
+            this.btHinzufügen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btHinzufügen.Name = "btHinzufügen";
-            this.btHinzufügen.Size = new System.Drawing.Size(245, 80);
+            this.btHinzufügen.Size = new System.Drawing.Size(184, 65);
             this.btHinzufügen.TabIndex = 3;
             this.btHinzufügen.Text = "Hinzufügen";
             this.btHinzufügen.UseVisualStyleBackColor = true;
@@ -99,9 +99,10 @@
             // btÄndern
             // 
             this.btÄndern.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btÄndern.Location = new System.Drawing.Point(263, 373);
+            this.btÄndern.Location = new System.Drawing.Point(197, 303);
+            this.btÄndern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btÄndern.Name = "btÄndern";
-            this.btÄndern.Size = new System.Drawing.Size(241, 80);
+            this.btÄndern.Size = new System.Drawing.Size(181, 65);
             this.btÄndern.TabIndex = 4;
             this.btÄndern.Text = "Ändern";
             this.btÄndern.UseVisualStyleBackColor = true;
@@ -110,22 +111,24 @@
             // btLöschen
             // 
             this.btLöschen.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLöschen.Location = new System.Drawing.Point(510, 373);
+            this.btLöschen.Location = new System.Drawing.Point(382, 303);
+            this.btLöschen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btLöschen.Name = "btLöschen";
-            this.btLöschen.Size = new System.Drawing.Size(236, 80);
+            this.btLöschen.Size = new System.Drawing.Size(177, 65);
             this.btLöschen.TabIndex = 5;
             this.btLöschen.Text = "Löschen";
             this.btLöschen.UseVisualStyleBackColor = true;
             // 
             // frmSchueler
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 479);
+            this.ClientSize = new System.Drawing.Size(661, 389);
             this.Controls.Add(this.btLöschen);
             this.Controls.Add(this.btÄndern);
             this.Controls.Add(this.btHinzufügen);
             this.Controls.Add(this.listView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmSchueler";
             this.Text = "frmSchueler";
             this.Load += new System.EventHandler(this.frmSchueler_Load);

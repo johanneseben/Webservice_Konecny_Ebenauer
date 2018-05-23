@@ -33,7 +33,7 @@ namespace Schülerliste
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            einlesenSchueler();
+            frmSchueler.fr.einlesenSchueler();
             /*
             einlesenKunde();
             einlesenArtikel();
@@ -65,6 +65,11 @@ namespace Schülerliste
             frmKlasse fKlasse = new frmKlasse();
             fKlasse.Text = "Klasse anzeigen";
             fKlasse.ShowDialog();
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

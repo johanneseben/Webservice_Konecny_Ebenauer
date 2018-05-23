@@ -12,6 +12,7 @@ namespace Schülerliste
 {
     public partial class frmSchueler : Form
     {
+        public static frmSchueler fr;
         public frmSchueler()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace Schülerliste
         private void frmSchueler_Load(object sender, EventArgs e)
         {
             einlesenSchueler();
+           
             
         }
         public void einlesenSchueler()
