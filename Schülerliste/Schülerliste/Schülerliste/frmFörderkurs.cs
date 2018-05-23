@@ -17,6 +17,7 @@ namespace Schülerliste
         private Button btHinzufügen;
         internal ListView listView1;
         private ColumnHeader columnHeader1;
+        private Label label2;
         private ColumnHeader columnHeader2;
 
         public frmFörderkurs()
@@ -34,45 +35,54 @@ namespace Schülerliste
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btLöschen
             // 
-            this.btLöschen.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLöschen.Location = new System.Drawing.Point(282, 381);
+            this.btLöschen.BackColor = System.Drawing.Color.Transparent;
+            this.btLöschen.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLöschen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btLöschen.Location = new System.Drawing.Point(363, 451);
             this.btLöschen.Name = "btLöschen";
             this.btLöschen.Size = new System.Drawing.Size(265, 80);
             this.btLöschen.TabIndex = 9;
             this.btLöschen.Text = "Löschen";
-            this.btLöschen.UseVisualStyleBackColor = true;
+            this.btLöschen.UseVisualStyleBackColor = false;
             // 
             // btÄndern
             // 
-            this.btÄndern.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btÄndern.Location = new System.Drawing.Point(282, 220);
+            this.btÄndern.BackColor = System.Drawing.Color.Transparent;
+            this.btÄndern.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btÄndern.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btÄndern.Location = new System.Drawing.Point(363, 278);
             this.btÄndern.Name = "btÄndern";
             this.btÄndern.Size = new System.Drawing.Size(270, 80);
             this.btÄndern.TabIndex = 8;
             this.btÄndern.Text = "Ändern";
-            this.btÄndern.UseVisualStyleBackColor = true;
+            this.btÄndern.UseVisualStyleBackColor = false;
             // 
             // btHinzufügen
             // 
-            this.btHinzufügen.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHinzufügen.Location = new System.Drawing.Point(282, 33);
+            this.btHinzufügen.BackColor = System.Drawing.Color.Transparent;
+            this.btHinzufügen.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHinzufügen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btHinzufügen.Location = new System.Drawing.Point(363, 103);
             this.btHinzufügen.Name = "btHinzufügen";
             this.btHinzufügen.Size = new System.Drawing.Size(274, 80);
             this.btHinzufügen.TabIndex = 7;
-            this.btHinzufügen.Text = "Hinzufügen";
-            this.btHinzufügen.UseVisualStyleBackColor = true;
+            this.btHinzufügen.Text = "Hinzufuegen";
+            this.btHinzufügen.UseVisualStyleBackColor = false;
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.White;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
+            this.listView1.ForeColor = System.Drawing.Color.Black;
             this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(13, 22);
+            this.listView1.Location = new System.Drawing.Point(94, 92);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
@@ -91,15 +101,32 @@ namespace Schülerliste
             this.columnHeader2.Text = "Fach";
             this.columnHeader2.Width = 120;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(280, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(228, 48);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Foerderkurs";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // frmFörderkurs
             // 
-            this.ClientSize = new System.Drawing.Size(578, 485);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(754, 573);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btLöschen);
             this.Controls.Add(this.btÄndern);
             this.Controls.Add(this.btHinzufügen);
             this.Controls.Add(this.listView1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "frmFörderkurs";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
     }

@@ -81,6 +81,9 @@
     <EmbeddedResource Include="frmFörderkurs.resx">
       <DependentUpon>frmFörderkurs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmKlasse.resx">
+      <DependentUpon>frmKlasse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSchueler.resx">
       <DependentUpon>frmSchueler.cs</DependentUpon>
     </EmbeddedResource>
