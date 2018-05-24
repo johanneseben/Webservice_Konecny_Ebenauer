@@ -38,7 +38,7 @@ namespace Api.Modules
 
             Get["/byKundeId/{id}"] = p =>
             {
-                var foerderkurse = foerderkursService.GetBy´Schueler(p.id);
+                var foerderkurse = foerderkursService.GetBySchueler(p.id);
                 return new JsonResponse(foerderkurse, new JsonNetSerializer());
             };
 
