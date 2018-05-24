@@ -1,22 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Schuelerliste_Service
+﻿namespace Api
 {
-    static class Program
+    using System;
+    using Nancy.Hosting.Self;
+    using System.Threading;
+    using System.Linq;
+
+    class Program
     {
-        /// <summary>
-        /// Der Haupteinstiegspunkt für die Anwendung.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        internal static ErrorLogFile log = new ErrorLogFile();
+
+        static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var uri = "http://localhost:8888";
+            Console.WriteLine(uri);
+            // initialize an instance of NancyHost (found in the
+            // Nancy.Hosting.Self package)
+            var host = new NancyHost(new Uri(uri));
+            host.Start();  // start hosting
+
+            //Under mono if you daemonize a process a Console.ReadLine will cause an EOF 
+            //so we need to block another way
+            if (args.Any(s => s.Equals("-d", StringComparison.CurrentCultureIgnoreCase)))
+            {
+                Thread.Sleep(Timeout.Infinite);
+            }
+            else
+            {
+                Console.ReadKey();
+            }
+
+            host.Stop();  // stop hosting
         }
     }
 }
