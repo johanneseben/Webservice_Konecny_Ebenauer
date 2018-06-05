@@ -22,9 +22,9 @@ namespace Schülerliste
 
         public frmFörderkurs()
         {
-            /* InitializeComponent();
+            InitializeComponent();
            restClient = new RestClient("http://localhost:8888");
-            authenticator = new HttpBasicAuthenticator("demo", "demo");*/
+            authenticator = new HttpBasicAuthenticator("demo", "demo");
         }
 
         private void InitializeComponent()
@@ -73,6 +73,7 @@ namespace Schülerliste
             this.btHinzufügen.TabIndex = 7;
             this.btHinzufügen.Text = "Hinzufuegen";
             this.btHinzufügen.UseVisualStyleBackColor = false;
+            this.btHinzufügen.Click += new System.EventHandler(this.btHinzufügen_Click);
             // 
             // listView1
             // 
@@ -128,6 +129,13 @@ namespace Schülerliste
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void btHinzufügen_Click(object sender, EventArgs e)
+        {
+            frmFörderkurs frmF = new frmFörderkurs();
+            frmF.Text = "Förderkurs hinzufügen";
+            frmF.ShowDialog();
         }
     }
 }

@@ -15,12 +15,12 @@ namespace Schülerliste
         public FormSchuelerHinzufuegen()
         {
             InitializeComponent();
-            /*restClient = new RestClient("http://localhost:8888");
-            authenticator = new HttpBasicAuthenticator("demo", "demo");*/
+            restClient = new RestClient("http://localhost:8888");
+            authenticator = new HttpBasicAuthenticator("demo", "demo");
         }
 
-        /*RestClient restClient;
-        IAuthenticator authenticator;*/
+        RestClient restClient;
+        IAuthenticator authenticator;
         internal int schuelerID;
 
         private void btnAbbrechen_Click(object sender, EventArgs e)
@@ -36,48 +36,52 @@ namespace Schülerliste
                 return;
             }
 
-           /* Artikel = new Artikel();
-            a.Preis = Convert.ToDouble(tbPreis.Text);
-            a.Bezeichnung = tbBezeichnung.Text;
-            a.UstSatz = Convert.ToDouble(tbUStSatz.Text) / 100;
+          
+            Schueler s = new Schueler();
+            s.SID = 1;
+            s.Vorname = tbVorname.Text;
+            s.Nachname = tbNachname.Text;
 
             var request = new RestRequest();
 
 
-            if (Text.Equals("Artikel hinzufügen"))
+            if (Text.Equals("Schueler hinzufügen"))
             {
-                request = new RestRequest("artikel", Method.POST);
+                request = new RestRequest("schueler", Method.POST);
             }
             else
             {
-                a.ArtikelID = artikelID;
-                request = new RestRequest("artikel", Method.PUT);
+                s.SID = schuelerID;
+                request = new RestRequest("schueler", Method.PUT);
             }
 
             request.AddHeader("Content-Type", "application/json");
             request.AddJsonBody(a);
             var response = restClient.Execute(request);
             Close();
-            */
+            
         }
 
-        private void frmArtikel_Load(object sender, EventArgs e)
+        private void frmSchueler_Load(object sender, EventArgs e)
         {
-            /*if (Text.Equals("Artikel bearbeiten"))
+            if (Text.Equals("Schueler bearbeiten"))
             {
-                var request = new RestRequest("artikel/" + artikelID, Method.GET);
+                var request = new RestRequest("schueler/" + SID, Method.GET);
                 request.AddHeader("Content-Type", "application/json");
-                var response = restClient.Execute<List<Artikel>>(request);
+                var response = restClient.Execute<List<Schueler>>(request);
 
-                foreach (Artikel a in response.Data)
+                foreach (Schueler s in response.Data)
                 {
-                    tbArtikelID.Text = a.ArtikelID.ToString();
-                    tbBezeichnung.Text = a.Bezeichnung;
-                    tbPreis.Text = a.Preis.ToString();
-                    tbUStSatz.Text = (a.UstSatz * 100).ToString();
+                    tbSID.Text = s.SID.ToString();
+                    tbVorname.Text = s.Vorname;
+                    tbNachname.Text = s.Nachname;
                 }
-            }*/
+            }
         }
 
+        private void tbFörderkurs_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

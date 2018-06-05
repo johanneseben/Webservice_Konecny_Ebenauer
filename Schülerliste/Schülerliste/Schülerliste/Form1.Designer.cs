@@ -110,6 +110,7 @@
             this.btSchueler.TabIndex = 1;
             this.btSchueler.Text = "Schueler";
             this.btSchueler.UseVisualStyleBackColor = true;
+            this.btSchueler.Click += new System.EventHandler(this.btSchueler_Click);
             // 
             // btProgrammSchließen
             // 
@@ -155,7 +156,6 @@
             this.Controls.Add(this.label2);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

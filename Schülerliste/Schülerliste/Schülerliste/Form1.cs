@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Schuelerliste_Service;
-using Schuelerliste_Service.Authenticators;
+using RestSharp;
+using RestSharp.Authenticators;
 using Schülerliste.Models;
 using Schülerliste.Forms;
-
 
 namespace Schülerliste
 {
@@ -37,7 +36,6 @@ namespace Schülerliste
             /*
             einlesenKunde();
             einlesenArtikel();
-            dateTimePicker1.MinDate = DateTime.Today;
             */
         }
 
@@ -67,9 +65,11 @@ namespace Schülerliste
             fKlasse.ShowDialog();
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
+        private void btSchueler_Click(object sender, EventArgs e)
         {
-
+            frmSchueler fSchueler = new frmSchueler();
+            fSchueler.Text = "Klasse anzeigen";
+            fSchueler.ShowDialog();
         }
     }
 }

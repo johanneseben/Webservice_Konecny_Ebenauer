@@ -67,6 +67,7 @@
             this.tbFörderkurs.Name = "tbFörderkurs";
             this.tbFörderkurs.Size = new System.Drawing.Size(229, 49);
             this.tbFörderkurs.TabIndex = 27;
+            this.tbFörderkurs.TextChanged += new System.EventHandler(this.tbFörderkurs_TextChanged);
             // 
             // tbKlasse
             // 

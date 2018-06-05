@@ -50,7 +50,7 @@
             this.columnHeader5});
             this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(68, 84);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(719, 338);
